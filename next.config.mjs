@@ -2,6 +2,9 @@
 const nextConfig = {
   output: 'export',
 
+  basePath: '/AI',
+  assetPrefix: '/AI/',
+
   typescript: {
     ignoreBuildErrors: true,
   },
