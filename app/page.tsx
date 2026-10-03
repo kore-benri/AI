@@ -14,7 +14,7 @@ import {
   Zap,
 } from 'lucide-react'
 
-const articles = const articles = [
+const articles = [
   {
     category: 'Prompt Engineering',
     title: '会議後のタスク整理を、AIに任せるための実務プロンプト',
