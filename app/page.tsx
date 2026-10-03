@@ -17,12 +17,13 @@ import {
 const articles = [
   {
     category: 'Prompt Engineering',
-    title: '会議後のタスク整理を、AIに任せるための実務プロンプト',
+    title: '【コピペで使える】会議の議事録からタスク・期限を自動抽出するプロンプト',
     date: '2026.10.03',
     readTime: '8 min read',
     excerpt: '議事録から担当者・期限・次のアクションまでを一度に抽出する、現場で使えるプロンプト設計。',
     accent: 'from-blue-500/30 via-cyan-400/10 to-transparent',
     icon: MessageSquareText,
+    href: '/AI/articles/meeting-minutes-prompt/',
   },
   {
     category: '業務効率化',
