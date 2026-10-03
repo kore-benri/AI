@@ -66,7 +66,7 @@ export default function Page() {
             <a className="transition-colors hover:text-white" href="#tools">ツール紹介</a>
             <a className="transition-colors hover:text-white" href="#consulting">運営者 / コンサル</a>
           </nav>
-          <a href="#contact" className="hidden items-center gap-2 rounded-full border border-blue-400/40 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-200 transition hover:bg-blue-400/20 sm:flex">お問い合わせ <ArrowUpRight size={15} /></a>
+          <a href="/AI/contact/" className="hidden items-center gap-2 rounded-full border border-blue-400/40 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-200 transition hover:bg-blue-400/20 sm:flex">お問い合わせ <ArrowUpRight size={15} /></a>
           <button className="rounded-lg p-2 text-slate-300 md:hidden" aria-label="メニューを開く"><Menu size={22} /></button>
         </div>
       </header>
