@@ -4,6 +4,7 @@ const nextConfig = {
 
   basePath: '/AI',
   assetPrefix: '/AI/',
+  trailingSlash: true,
 
   typescript: {
     ignoreBuildErrors: true,
