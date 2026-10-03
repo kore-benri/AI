@@ -37,13 +37,15 @@ const articles = [
   },
   {
     category: 'AI活用事例',
-    title: '中小企業のための生成AI導入、最初の30日間',
-    date: '2026.09.28',
-    readTime: '10 min read',
-    excerpt: 'ツール選定から社内ルールづくりまで。スモールスタートで成果を出すロードマップ。',
+    title: '中小企業が生成AIを導入する最初の一歩',
+    date: '2026.10.03',
+    readTime: '9 min read',
+    excerpt: 'いきなり全社導入しない。課題選定から効果測定まで、生成AIを小さく始める5つのステップ。',
     accent: 'from-violet-400/25 via-fuchsia-400/10 to-transparent',
     icon: BrainCircuit,
+    href: '/AI/articles/small-business-ai-start/',
   },
+
 ]
 
 const tools = [
