@@ -1,10 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Script from 'next/script'
-
-const MOBILE_AD = 'https://adm.shinobi.jp/s/6f621e9e01778ed698908bc57b18d57e'
-const DESKTOP_AD = 'https://adm.shinobi.jp/s/d51bf78cf18f01cd717f7e9448599fca'
 
 export default function AdMaxSlot() {
   const [mobile, setMobile] = useState<boolean | null>(null)
@@ -18,14 +14,14 @@ export default function AdMaxSlot() {
       <div className="mx-auto flex w-full flex-col items-center">
         <span className="mb-2 block text-[11px] text-slate-500">広告</span>
         {mobile !== null && (
-          <div className={mobile ? 'min-h-[50px] w-full max-w-[320px] text-center' : 'min-h-[250px] w-[300px] max-w-full text-center'}>
-            <Script
-              key={mobile ? 'admax-mobile' : 'admax-desktop'}
-              id={mobile ? 'admax-mobile' : 'admax-desktop'}
-              src={mobile ? MOBILE_AD : DESKTOP_AD}
-              strategy="afterInteractive"
-            />
-          </div>
+          <iframe
+            key={mobile ? 'mobile' : 'desktop'}
+            title="忍者AdMax 広告"
+            src={mobile ? '/AI/admax-mobile.html' : '/AI/admax-desktop.html'}
+            loading="lazy"
+            scrolling="no"
+            className={mobile ? 'block h-[50px] w-[320px] max-w-full border-0 bg-transparent' : 'block h-[250px] w-[300px] max-w-full border-0 bg-transparent'}
+          />
         )}
       </div>
     </aside>
